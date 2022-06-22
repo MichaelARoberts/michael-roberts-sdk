@@ -1,7 +1,7 @@
 # the-one-sdk
 the-one-sdk is an SDK for the [The One API](https://the-one-api.dev/)
 
-[https://img.shields.io/bundlephobia/min/@michaelaroberts/the-one-sdk](<LINK>)
+![minified-size](https://img.shields.io/bundlephobia/min/@michaelaroberts/the-one-sdk?style=flat)
 
 ## How to Install
 npm install the-one-sdk
