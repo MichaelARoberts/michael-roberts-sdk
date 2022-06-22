@@ -57,7 +57,6 @@ const api =  {
 
   setToken: function (token)  {
     this.token = token
-    return this
   },
 
   getChapters: async function () {return await this.get(`/chapter`)},
