@@ -14,7 +14,7 @@ the-one-sdk is bundled with parcel, run ```npm run watch``` or ```npm run build`
 create a .env file, with a value called TOKEN assigned to your the-one-api bearer token. The test command is: ```npm run test```
 ## Basic Functionality
 ```js
-import one from 'the-one-sdk'
+import one from '@michaelaroberts/the-one-sdk'
 const ring = one.setToken('YOUR-TOKEN-HERE');
 const quotes = await ring.getQuotes();
 console.log(quotes)
