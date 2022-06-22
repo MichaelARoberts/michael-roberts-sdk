@@ -2,7 +2,8 @@
   "dependencies": {
     "axios": "^0.27.2"
   },
-  "name": "the-one-sdk",
+  "name": "@michaelaroberts/the-one-sdk",
+  "repository": "MichaelARoberts/michael-roberts-sdk",
   "version": "1.0.0",
   "main": "dist/main.js",
   "source": "src/index.js",
