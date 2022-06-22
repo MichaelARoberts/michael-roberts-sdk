@@ -42,8 +42,6 @@ const api =  {
 
     return new Promise((resolve, reject) => {
 
-      console.log(this)
-
       if(!this.token) {
         reject('Missing Token. Please set token.')
       }
@@ -63,22 +61,22 @@ const api =  {
   },
 
   getChapters: async function () {return await this.get(`/chapter`)},
-  getChapter: async function () { return await this.get(`/chapter/${id}`)},
+  getChapter: async function (id) { return await this.get(`/chapter/${id}`)},
   getBooks: async function () { return await this.get(`/book`)},
-  getBook: async function () { return await this.get(`/book/${id}`)},
-  getBooksChapters: async function () { return await this.get(`/book/${id}/chapter`)},
+  getBook: async function (id) { return await this.get(`/book/${id}`)},
+  getBooksChapters: async function (id) { return await this.get(`/book/${id}/chapter`)},
 
   // Movie specific
   getQuotes: async function () {return await this.get('/quote')},
-  getQuote: async function () {return await this.get(`/quote/${id}`)},
-  getMovieQuotes: async function () {return await this.get(`/movie/${id}/quote`)},
-  getCharacterQuotes: async function () {return await this.get(`/character/${id}/quote`)},
-  getMovie: async function () {return await this.get(`/movie/${id}`)},
+  getQuote: async function (id) {return await this.get(`/quote/${id}`)},
+  getMovieQuotes: async function (id) {return await this.get(`/movie/${id}/quote`)},
+  getCharacterQuotes: async function (id) {return await this.get(`/character/${id}/quote`)},
+  getMovie: async function (id) {return await this.get(`/movie/${id}`)},
   getMovies: async function () {return await this.get(`/movie`)},
 
   // Both book and the movies
   getCharacters: async function () {return await this.get(`/character`)},
-  getCharacter: async function () {return await this.get(`/character/${id}`)},
+  getCharacter: async function (id) {return await this.get(`/character/${id}`)},
 }
 
 export default api

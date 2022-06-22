@@ -11,7 +11,8 @@ npm i @michaelaroberts/the-one-sdk
 the-one-sdk is bundled with parcel, run ```npm run watch``` or ```npm run build``` to run the compiler, either in watch or build mode
 
 ## How to Run Tests
-npm test
+create a .env file, with a value called TOKEN assigned to your the-one-api bearer token. The test command is:
+```npm test```
 
 ## Basic Functionality
 ```
