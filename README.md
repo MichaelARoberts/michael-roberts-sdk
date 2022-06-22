@@ -11,13 +11,12 @@ npm i @michaelaroberts/the-one-sdk
 the-one-sdk is bundled with parcel, run ```npm run watch``` or ```npm run build``` to run the compiler, either in watch or build mode
 
 ## How to Run Tests
-create a .env file, with a value called TOKEN assigned to your the-one-api bearer token. The test command is:
-```npm test```
-
+create a .env file, with a value called TOKEN assigned to your the-one-api bearer token. The test command is: ```npm run test```
 ## Basic Functionality
-```
+```js
 import one from 'the-one-sdk'
 const ring = one.setToken('YOUR-TOKEN-HERE');
 const quotes = await ring.getQuotes();
 console.log(quotes)
 ```
+For more implementation infomation, view the SDK design document [here](/design.md)
